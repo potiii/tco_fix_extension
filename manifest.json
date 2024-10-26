@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "t.co URL 修正",
+    "version": "1.0",
+    "description": "https://t/.co/ を https://t.co/ に置換します。",
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "*://t/.co/*"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    }
+  }

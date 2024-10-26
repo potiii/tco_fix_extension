@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "regexSubstitution": "https://t.co/\\1"
+        }
+      },
+      "condition": {
+        "regexFilter": "^https://t/\\.co/(.*)",
+        "resourceTypes": ["main_frame"]
+      }
+    }
+  ]
